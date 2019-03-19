@@ -1,0 +1,46 @@
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Add Person</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" formControlName="username" placeholder="username" name="username" class="form-control" id="username">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" formControlName="password" placeholder="password" name="password" class="form-control" id="password">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input formControlName="name" placeholder="name" name="name" class="form-control" id="name">
+    </div>
+
+    <div class="form-group">
+      <label for="surname">Surname:</label>
+      <input formControlName="surname" placeholder="surname" name="surname" class="form-control" id="surname">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type= formControlName="email" placeholder="email" name="email" class="form-control" id="email">
+    </div>
+
+    <div class="form-group">
+      <label for="amount">Capital:</label>
+      <input type="number" formControlName="amount" placeholder="amount" name="amount" class="form-control" id="amount">
+    </div>
+
+    <div class="form-group">
+      <label for="termInMonth">Duration In Months:</label>
+      <input type="number" formControlName="termInMonth" placeholder="termInMonth" name="termInMonth" class="form-control" id="termInMonth">
+    </div>
+
+    <div class="form-group">
+      <label for="rateDaily">Daily Rate:</label>
+      <input type="number" formControlName="rateDaily" placeholder="rateDaily" name="rateDaily" class="form-control" id="rateDaily">
+    </div>
+
+    <button class="btn btn-success">Save</button>
+  </form>
+</div>
